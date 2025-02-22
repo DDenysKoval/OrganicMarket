@@ -14,7 +14,7 @@
       rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script type="module" crossorigin src="/OrganicMarket/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/OrganicMarket/assets/index-DX8bSboJ.css">
+    <link rel="stylesheet" crossorigin href="/OrganicMarket/assets/index-D26c-SJg.css">
   </head>
   <body>
     <header class="header-section">
@@ -26,7 +26,7 @@
       <section class="hero-section">
     HERO
 </section>
-      <section class="howitworks-section">
+      <section class="howitworks-section" id="howitworks">
     HOW IT WORKS
 </section>
       <section class="advert-section">
@@ -39,10 +39,10 @@
   </div>
 </section>
 
-      <section class="vegetables-section">
+      <section class="vegetables-section" id="vegetables">
     VEGETABLES
 </section>
-      <section class="reviews-section">
+      <section class="reviews-section" id="reviews">
   <div class="container container-reviews">
     <div class="reviews-title-wrapper">
       <h1 class="reviews-title">
@@ -105,9 +105,6 @@
         </li>
       </ul>
       <div class="swiper-pagination"></div>
-      <!-- <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div> -->
-      <!-- <div class="swiper-scrollbar"></div> -->
     </div>
   </div>
 </section>
@@ -203,18 +200,18 @@
   </div>
 </section>
 
-      <div class="mobile-overlay">
+      <div class="mobile-overlay" data-modal>
     <div class="mobile-menu">
-        <button class="mobile-close-btn" type="button">
+        <button class="mobile-close-btn" type="button" data-modal-close>
             <svg class="mobile-close-icon" width="32" height="32">
                 <use href="/OrganicMarket/assets/icons-0O33VqnA.svg#icon-close"></use>
             </svg>
         </button>
         <nav class="mobile-nav-menu">
             <ul class="mobile-nav-list">
-                <li class="mobile-nav-list-item"><a class="mobile-nav-list-link" href="">How It Works</a></li>
-                <li class="mobile-nav-list-item"><a class="mobile-nav-list-link" href="">Vegetables</a></li>
-                <li class="mobile-nav-list-item"><a class="mobile-nav-list-link" href="">Reviews</a></li>
+                <li class="mobile-nav-list-item"><a class="mobile-nav-list-link" href="#howitworks">How It Works</a></li>
+                <li class="mobile-nav-list-item"><a class="mobile-nav-list-link" href="#vegetables">Vegetables</a></li>
+                <li class="mobile-nav-list-item"><a class="mobile-nav-list-link" href="#reviews">Reviews</a></li>
             </ul>
         </nav>
         <button class="mobile-shop-btn" type="button">SHOP NOW</button>
@@ -228,6 +225,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
 
   </body>
 </html>
