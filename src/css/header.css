@@ -1,3 +1,146 @@
 .header-section {
-  background-color: #576f35;;
+  background-color: rgba(87, 111, 53, 1);
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  /* На мобильных отступ 20px */
 }
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  fill: white;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  margin-left: 0;
+  
+}
+
+.nav-link {
+  display: none;
+ 
+}
+
+.icon-burger {
+  width: 32px;
+  height: 32px;
+  display: block;
+  /* Показываем по умолчанию */
+}
+
+@media screen and (min-width: 768px) {
+.header-section{
+  padding: 0 32px;
+
+}
+.icon-burger{
+  width: 40px;
+  height: 40px;
+}
+.logo-icon {
+  width: 216px;
+  height: 20px;
+}
+
+
+  
+}
+@media screen and (min-width: 1280px) {
+  .header-section {
+    height: 56px;
+    padding: 0 100px;
+  }
+
+  .header-logo {
+    margin-left: 0;
+  }
+  .logo-icon{
+    width: 216px;
+      height: 20px;
+  }
+
+  .header-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav-link {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    
+  }
+
+  .link {
+   display: block;
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+.icon-burger {
+    display: none;
+    /* Гарантированно скрываем на десктопе */
+  }
+    
+  }
+
+ 
+
+ .red-head-link {
+   background-color: rgba(122, 49, 69, 1);
+   color: white;
+   border: none;
+   font-size: 18px;
+   line-height: 20px;
+   text-transform: uppercase;
+   letter-spacing: -1.5%;
+   border-radius: 30px;
+   padding: 16px 32px;
+   text-align: center;
+   font-weight: 600;
+   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+ }
+
+  .header-links {
+    align-items: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid white;
+    color: white;
+  }
+
+  .red-link {
+    padding-left: 16px;
+  }
+
+    .header-links:hover{
+      background-color: rgba(212, 191, 196, 1);
+      color: rgba(122, 49, 69, 1);
+    }
+    .header-links:active{
+        background-color: rgba(251, 251, 251, 1);
+       color:  rgba(122, 49, 69, 1);
+    }
+     .red-head-link:hover {
+       background-color: rgba(212, 191, 196, 1);
+       color: rgba(122, 49, 69, 1);
+     }
+     .red-head-link:focus {
+       background-color: white;
+       color: rgba(122, 49, 69, 1);
+     }
+
