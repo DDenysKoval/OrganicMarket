@@ -15,7 +15,7 @@
       rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script type="module" crossorigin src="/OrganicMarket/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/OrganicMarket/assets/index-C3O4TT4j.css">
+    <link rel="stylesheet" crossorigin href="/OrganicMarket/assets/index-DkJCpl_F.css">
   </head>
   <body>
     <header class="header" id="header">
@@ -99,7 +99,6 @@
         </div>
         <ol class="hiw-list">
           <li class="hiw-item">
-            <div class="hiw-circle"></div>
             <p class="hiw-text">
               Just choose
               <span class="hiw-accent-black">the vegetable</span> you want to
@@ -108,14 +107,12 @@
             </p>
           </li>
           <li class="hiw-item">
-            <div class="hiw-circle"></div>
             <p class="hiw-text">
               Click on <span class="hiw-accent-black">the basket</span> and fill
               out the form.
             </p>
           </li>
           <li class="hiw-item">
-            <div class="hiw-circle"></div>
             <p class="hiw-text">
               Sit back and relax! Your
               <span class="hiw-accent-black">fresh vegetables</span> basket will
@@ -470,24 +467,26 @@
         </p>
         <form name="order" class="yourorder-form">
           <input
+            aria-label="username"
             autocomplete="on"
             name="username"
             type="text"
             class="form-input"
             placeholder="Full Name"
-            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
             required
           />
           <input
+            aria-label="email"
             autocomplete="on"
             name="email"
             type="email"
             class="form-input"
             placeholder="Email"
-            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            pattern="(?:[^\s@]*)[\w]{1}@{1}(?:[^\s@]+)[\.]{1}(?:[^\s@]{1,255}\w{1})"
             required
           />
           <textarea
+            aria-label="comment"
             name="comment"
             class="form-comment"
             placeholder="Comment"
