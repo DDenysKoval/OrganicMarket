@@ -1,26 +1,9 @@
 .yourorder-section {
     background-color: #576f35;
     padding: 80px 0;
-    position: relative;
 }
 
-.btn-return {
-    height: 50px;
-    width: 50px;
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-    border: 5px solid #d4bfc4;
-    background-color: #7a3145;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.icon-return {
-    fill: #d4bfc4;
-}
 
 .yourorder-title {
     font-weight: 600;
